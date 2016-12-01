@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript">
+
+</script>
+</head>
+
+<body>
+
+<p>Try to change the names.</p>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" id="txtbox" value=""><br>
+Last Name: <label id="raj"> </label>
+<input type="button" onClick="cm();" value="click me">
+
+</div>
+
+<script>
+function cm(){
+var tvalue = document.getElementById('txtbox').value ;
+//alert(tvalue);
+document.getElementById('raj').innerHTML  = tvalue ;
+}
+</script>
+
+</body>
+</html>
